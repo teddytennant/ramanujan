@@ -1,0 +1,15 @@
+[package]
+name = "ramanujan"
+version = "0.1.0"
+edition = "2021"
+description = "Island-model search for extremal combinatorial objects, with machine-checkable certificates"
+license = "MIT"
+
+[dependencies]
+
+[[bin]]
+name = "ramanujan"
+path = "src/bin/search.rs"
+
+[profile.release]
+opt-level = 3
